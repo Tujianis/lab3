@@ -42,6 +42,9 @@ if (!$errors) {
     echo "<h1>Request received</h1>";
     echo "<p>Course: " . htmlspecialchars($course, ENT_QUOTES, "UTF-8") . "</p>";
     echo "<p>Topic: " . htmlspecialchars($topic, ENT_QUOTES, "UTF-8") . "</p>";
+    echo "<p>Date: " . htmlspecialchars($preferredDate, ENT_QUOTES, "UTF-8") . "</p>";
+    echo "<p>Time: " . htmlspecialchars($preferredTime, ENT_QUOTES, "UTF-8") . "</p>";
+
     echo "<p>Status: Pending review</p>";
 } else {
     echo "The following values are incorrect: " .'<br>';
