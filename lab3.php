@@ -2,9 +2,8 @@
 
 //indexed arrays
 $timeSlots = ["Morning", "Afternoon", "Evening"];
-echo $timeSlots[0];        // Morning
-echo $timeSlots[1];        // Afternoon
-echo $timeSlots[2];        // Evening
+echo $timeSlots[0] .'<br>';        // Morning
+echo $timeSlots[2].'<br>';        // Evening
 echo '<br>';
 
 //associative arrays
@@ -15,14 +14,17 @@ $request = [
 ];
 echo $request["topic"];    // PHP arrays
 echo '<br>';
+echo '<br>';
 
 //multidimensional arrays
 $requests = [
     ["student" => "Amina", "course" => "IS 6465", "status" => "Pending review"],
-    ["student" => "Diego", "course" => "IS 6495", "status" => "Matched"]
+    ["student" => "Diego", "course" => "IS 6495", "status" => "Matched"],
+    ["student" => "Bob", "course" => "IS 6570", "status" => "Pending review"]
 ];
-print_r( $requests[0]);
+print_r( $requests[2]);
 
+echo '<br>';
 echo '<br>';
 
 //foreach
@@ -33,8 +35,6 @@ foreach ($courses as $course) {
     echo htmlspecialchars($course, ENT_QUOTES, "UTF-8") . "</option>";
 }
 echo '<br>';
-
-
 
 ?>
 
